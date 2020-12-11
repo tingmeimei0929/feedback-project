@@ -12,6 +12,13 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
+
+// // 引入scss文件
+// import './assets/scss/common.scss'
+// import './assets/scss/footer.scss'
+// import './assets/scss/header.scss'
+// import './assets/scss/main.scss'
+// import './assets/scss/mixin.scss'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

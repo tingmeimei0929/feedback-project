@@ -1,0 +1,68 @@
+@charset "utf-8";
+$vm_fontsize: 96;
+@function rem($px) {
+     @return ($px / $vm_fontsize ) * 1rem;
+}
+@function pc($px) {
+  @return ( $px / 0.375 / 2) *1px;
+}
+@function em($px) {
+  @return (($px / 0.75) / 100) * 1em;
+}
+@function emMin($px) {
+  @return (($px / 0.54) / 100) * 1em;
+}
+$vm_design: 750;
+@mixin clearfix{
+    &:after{
+        visibility: hidden;
+        display: block;
+        content: " ";
+        clear: both;
+    }
+}
+@mixin transform($transform){
+	-webkit-transform:$transform;
+	-moz-transform:$transform;
+	transform:$transform;
+}
+@mixin transition($transition...){
+	-webkit-transition:$transition;
+	-moz-transition:$transition;
+	transition:$transition;
+}
+@mixin animation($animation...){
+	-webkit-animation:$animation;
+	-moz-animation:$animation;
+	animation:$animation;
+}
+@mixin keyframes($name){
+    @keyframes #{$name} {
+        @content;
+    }
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+}
+@mixin mediaQueryPc{
+    @media only screen and (max-width: 1900px)
+    {
+        @content;
+    }
+}
+@mixin mediaQueryMobile{
+    @media only screen and (max-width: 768px)
+    {
+        @content;
+    }
+}
+@mixin mediaQueryIPad{
+    @media only screen and (max-width: 992px)
+    {
+        @content;
+    }
+}
+$bgColor: #f2e0d0

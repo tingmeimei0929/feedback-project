@@ -1,0 +1,157 @@
+.main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    $color: #26747a;
+
+    .container{
+        .sort{
+            width: inherit;
+            margin-top: 20px;
+            
+            ul{
+                margin: 10px 80px;
+                display: flex;
+                justify-content: space-between;
+                
+                li{
+                    flex: 1;
+                    flex-shrink: 0;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    background: #fff;
+                    margin-left: 10px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 10px;
+                    cursor: pointer;
+                    color: $color;
+                }
+                li:hover{
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+        }
+
+        .main-content{
+            width: inherit;
+            .content{
+                margin:10px 80px 30px 90px;
+                padding-top: 30px;
+                background-color: #fff;
+                overflow:hidden;
+
+                .el-steps{
+                    width: inherit;
+                    height: 40px;
+                    margin-bottom: 20px;
+                   
+                }
+                .el-step.is-vertical .el-step__title {
+                    padding-bottom: 80px !important;
+                    line-height: 33px !important;
+                }
+                .reveal{
+                    width: inherit;
+                    position: relative;
+
+                    .step{
+                        width: inherit;
+                        text-align: center;
+                        &.active1{
+                            h2{
+                                margin-top: 100px;
+                                text-align: center;
+                                font-size: 1.2em;
+                                font-weight: 700;
+                                a{
+                                    color: $color;
+                                }
+                            }
+                        }
+                        .stencil {
+                            width: inherit;
+                            text-align: start;
+                            margin: 10px;
+
+                            h2{
+                                font-size: 1.25em;
+                                font-weight: 700;
+                                line-height: 1.2;
+                                padding-bottom: .3em;
+                            }
+                            h3{
+                                font-size: 1em;
+                                font-weight: 700;
+                                line-height: 1.25;
+                                padding-bottom: 10px;
+                            }
+                            ol{
+                                padding-left: 18px;
+                                li{
+                                    list-style-type: decimal;
+                                    font-size: 16px;
+                                    padding-bottom: 10px;
+    
+                                    a,span{
+                                        color: $color;
+                                    }
+                                }
+                                &.list-style-desc{
+                                    li{
+                                        list-style-type: disc;
+
+                                        a,span{
+                                            color: $color;
+                                        }
+                                    }
+                                }
+                                &.list-style-none{
+                                    li{
+                                        list-style-type: none;
+
+                                        a,span{
+                                            color: $color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .btn{
+                       margin: 50px 0 20px 0;
+                       width: inherit;
+                       text-align: center;
+
+                       .el-button{
+                           background-color: $color;
+                           color: #fff;
+                           font-size: 20px;
+                           border-color: $color;
+
+                           &.pre{
+                                margin-right: 10px;
+                           }
+                       }
+                   }
+                }
+                .message-form{
+                    margin:30px 60px;
+                    width: 70%;
+
+                    .enterDesc{
+                        width: 400px;
+                    }
+                    .prompt{
+                        display: block;
+                    }
+                }
+                .customerService{
+                    width: 30%;
+                }
+            }
+
+        }
+    }
+}

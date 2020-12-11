@@ -1,0 +1,23 @@
+.footer{
+    background-color: #333;
+    color: #fff;
+    border-top: 5px solid #777;
+    padding: 15px 30px;
+
+    ul{
+        padding: 10px 20px;
+        display: flex;
+        li{
+            display: block;
+            padding: 0 30px 15px 0;
+            flex: 1;
+
+            a{
+                color: #fff;
+            }
+        }
+    }
+    .present{
+        display: block;
+    }
+}
